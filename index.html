@@ -1,17 +1,32 @@
-<h1 style="text-align: center; margin-top: 10px; position: absolute; top: 20px">Aspect Ratio Calculator</h1>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
 
+<body>
+  <button id="menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation">☰</button>
 
-<body style="margin: 0; min-height: 75vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; font-family: sans-serif;">
+  <aside id="sidebar" aria-hidden="true">
+    <a href="https://cooler01220.github.io/Pixel-Visualizer/">Pixel Visualizer</a>
+    <a href="https://cooler01220.github.io/Aspect-Ratio-Calculator/">Aspect Ratio Calculator</a>
+  </aside>
 
+  <button id="theme-btn" type="button" aria-label="Switch to dark mode">☀</button>
 
-  <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
-    <div style="display: flex; gap: 10px; align-items: center;">
-      <input type="number" id="width-input" placeholder="Width" style="padding: 8px; width: 80px;">
+  <h1 id="title">Aspect Ratio Calculator</h1>
+
+  <main>
+    <div class="dimension-inputs">
+      <input type="number" id="width-input" placeholder="Width">
       <span>x</span>
-      <input type="number" id="height-input" placeholder="Height" style="padding: 8px; width: 80px;">
+      <input type="number" id="height-input" placeholder="Height">
     </div>
-    <button id="calculate-btn" style="padding: 8px 16px; background-color: #0a005f; color: white; border: none; cursor: pointer; font-weight: bold;">Calculate</button>
+    <button id="calculate-btn">Calculate</button>
     <p id="result" aria-live="polite"></p>
-  </div>
+  </main>
 
   <script src="script.js"></script>
+</body>
